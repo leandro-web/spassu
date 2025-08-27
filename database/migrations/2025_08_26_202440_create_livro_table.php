@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('Editora', 40);
             $table->integer('Edicao');
             $table->string('AnoPublicacao', 4);
-            $table->decimal('valor', 10, 2)->default(0);
+            $table->decimal('Valor', 10, 2)->default(0);
         });
     }
 
