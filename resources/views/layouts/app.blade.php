@@ -39,7 +39,7 @@
         @yield('content')
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4 fixed-bottom">
+    <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>&copy; {{ date('Y') }} - Meu teste para a SPASSU</p>
     </footer>
 
