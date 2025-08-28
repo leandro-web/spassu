@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AutorController;
 use App\Http\Controllers\AssuntoController;
 use App\Http\Controllers\LivroController;
+use App\Http\Controllers\RelatorioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', [LivroController::class, 'index']);
 Route::resource('autores', AutorController::class);
 Route::resource('assuntos', AssuntoController::class);
 Route::resource('livros', LivroController::class);
+Route::get('/relatorios', [RelatorioController::class, 'index'])->name('relatorios.livros');
