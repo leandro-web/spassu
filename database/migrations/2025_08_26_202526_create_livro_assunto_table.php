@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('Livro_Assunto', function (Blueprint $table) {
             $table->unsignedBigInteger('Livro_Codl');
             $table->unsignedBigInteger('Assunto_CodAs');
+            $table->timestamps();
 
             $table->foreign('Livro_Codl')->references('Codl')->on('Livro')
                 ->cascadeOnDelete();

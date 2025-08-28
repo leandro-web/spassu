@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('Autor', function (Blueprint $table) {
             $table->bigIncrements('CodAu');
             $table->string('Nome', 40);
+            $table->timestamps();
         });
     }
 

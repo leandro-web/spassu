@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('Assunto', function (Blueprint $table) {
             $table->bigIncrements('CodAs');
             $table->string('Descricao', 20);
+            $table->timestamps();
         });
     }
 
