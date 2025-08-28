@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('Edicao');
             $table->string('AnoPublicacao', 4);
             $table->decimal('Valor', 10, 2)->default(0);
+            $table->timestamps();
         });
     }
 

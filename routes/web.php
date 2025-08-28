@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AutorController;
+use App\Http\Controllers\AssuntoController;
+use App\Http\Controllers\LivroController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LivroController::class, 'index']);
+Route::resource('autores', AutorController::class);
+Route::resource('assuntos', AssuntoController::class);
+Route::resource('livros', LivroController::class);
