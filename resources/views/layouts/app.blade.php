@@ -27,6 +27,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('assuntos.index') }}">Assunto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('relatorios.livros') }}" target="_blank">Relatório PDF</a>
+                    </li>
                 </ul>
             </div>
         </div>
