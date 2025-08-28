@@ -15,10 +15,10 @@ class Livro extends Model
     protected $fillable = ['Titulo','Editora','Edicao','AnoPublicacao','Valor'];
 
     public function autores()  {
-        return $this->belongsToMany(Autor::class, 'livro_autor', 'Livro_Codl', 'Autor_CodAu');
+        return $this->belongsToMany(Autor::class, 'livro_autor', 'Livro_Codl', 'Autor_CodAu')->withTimestamps();
     }
 
     public function assuntos() {
-        return $this->belongsToMany(Assunto::class, 'livro_assunto', 'Livro_Codl', 'Assunto_CodAs');
+        return $this->belongsToMany(Assunto::class, 'livro_assunto', 'Livro_Codl', 'Assunto_CodAs')->withTimestamps();
     }
 }
